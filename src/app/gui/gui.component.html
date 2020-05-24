@@ -1,0 +1,42 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <mat-card class="name-card" style="margin: 2em;"
+    ><h2
+      style="
+        text-align: center;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.966);
+      "
+    >
+      <b>{{ "Senior Capstone Dashboard" | uppercase }}</b>
+    </h2></mat-card
+  >
+
+  <!-- for drag and drop gui elements -->
+  <mat-card
+    class="example-dashboard"
+    cdkDrag
+    fxLayout="column"
+    fxLayoutAlign="center center"
+  >
+    <canvas
+      height="400"
+      width="400"
+      baseChart
+      [datasets]="barChartData"
+      [labels]="barChartLabels"
+      [options]="barChartOptions"
+      [legend]="barChartLegend"
+      [chartType]="barChartType"
+    ></canvas>
+  </mat-card>
+  <button
+    mat-button
+    mat-raised-button
+    color="accent"
+    (click)="getData()"
+    style="margin-top: 1em;"
+  >
+    graph can be moved, click here for dynamic example
+  </button>
+  <!-- end drag and drop -->
+</div>

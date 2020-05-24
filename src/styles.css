@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Application-wide Styles */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2,
+h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body,
+input[type="text"],
+button {
+  color: #333;
+  font-family: Cambria, Georgia;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+html {
+  overflow-y: scroll;
+}
+.name-card {
+  background-color: rgba(72, 10, 187, 0.993);
+  color: white;
+  min-width: 100px;
+  box-shadow: 2 3px 1px -2px rgba(100, 226, 16, 0.911),
+    0 2px 2px 0 rgba(103, 236, 26, 0.678), 0 1px 5px 0 rgba(20, 18, 179, 0.12);
+}
+
+.info-card {
+  background-color: rgba(224, 219, 247, 0.096);
+  box-shadow: 2 3px 1px -2px rgba(100, 226, 16, 0.911),
+    0 2px 2px 0 rgba(101, 231, 25, 0.678), 0 1px 5px 0 rgb(37, 179, 18);
+}
+/* Thick red border */
+hr.head {
+  border: 2px solid rgb(255, 153, 0);
+}
+hr.fieldItems {
+  border-top: 1px dashed darksalmon;
+}

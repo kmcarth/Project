@@ -1,0 +1,26 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <mat-card class="name-card" style="margin: 2em;">
+    <h2
+      style="
+        text-align: center;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.966);
+      "
+    >
+      <b>{{ "Top Projects In Queue" | uppercase }}</b>
+    </h2>
+  </mat-card>
+  <mat-card fxLayoutAlign="center">
+    <div fxLayoutAlign="center">
+      <a
+        *ngFor="let client of clients"
+        class="col-1-4"
+        routerLink="/detail/{{ client.id }}"
+      >
+        <div class="module client">
+          <h4>{{ client.business_name }}</h4>
+        </div>
+      </a>
+    </div>
+  </mat-card>
+</div>
